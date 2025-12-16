@@ -1,0 +1,51 @@
+1. Regaining Server Access (No Downtime)
+
+Identify the firewall rules that blocked administrative access.
+
+Use out-of-band or console access (physical/virtual console) to access the server.
+
+Restore or rollback firewall rules to the last known working configuration.
+
+Allow access only on required management ports (e.g., SSH/RDP) from trusted IPs.
+
+Apply the principle of least privilege when fixing rules.
+
+Verify that all critical services remain running.
+
+Monitor logs to ensure normal operation.
+
+Document the incident and implement change management to prevent recurrence.
+
+--------------------------------------------------------------------------------
+2. Malware Analysis on User System
+
+Immediately isolate the infected system from the network.
+
+Preserve evidence by taking disk and memory images.
+
+Perform static analysis (hashing, file inspection).
+
+Perform dynamic analysis in a controlled sandbox.
+
+Identify persistence mechanisms (startup entries, services).
+
+Remove malicious files and clean persistence points.
+
+Patch vulnerabilities and update security tools.
+
+Restore system from clean backups if required.
+
+Reconnect system after validation.
+
+----------------------------------------------------------------------------------
+3. Preventive Measures
+
+Regular firewall configuration backups
+
+Strong access control and RBAC
+
+Endpoint protection and EDR
+
+User awareness training
+
+Incident response and forensic readiness
